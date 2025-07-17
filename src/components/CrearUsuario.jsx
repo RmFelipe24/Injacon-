@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import injacomLogo from '../assets/INJACOM png.png';
 import loginBackground from '../assets/fondo1.jpg';
-import CustomAlert from './CustomAlert';
+import CustomAlert from './CustomAlert'; 
 
 const CrearUsuario = ({ onBack, onUserCreated }) => {
   const [formData, setFormData] = useState({
