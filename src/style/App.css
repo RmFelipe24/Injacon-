@@ -1,0 +1,121 @@
+.body-bg {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #eef2e1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-injacom {
+  background-color: #092f57;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo .verde {
+  color: #b4e61b;
+}
+
+.logo .blanco {
+  color: #ffffff;
+}
+
+.search-bar input {
+  border-radius: 4px;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  width: 220px;
+}
+
+.search-bar span {
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar-injacom {
+  flex-shrink: 0;
+  width: 200px;
+  background-color: #f0e9f9;
+  padding: 1rem;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar-injacom ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-injacom li {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.sidebar-injacom li:hover {
+  background-color: #e0d7f2;
+}
+
+.d-flex.flex-grow-1 {
+  display: flex;
+  flex-grow: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.main-content-injacom {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #eef2e1;
+  overflow-y: auto;
+}
+
+.footer-injacom {
+  background-color: #092f57;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  height: 100%;
+}
+
+.card-title {
+  color: #000;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.row {
+  margin: 0 !important;
+  width: 100% !important;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+}

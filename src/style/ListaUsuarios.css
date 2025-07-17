@@ -1,0 +1,25 @@
+.lista-usuarios-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh; /* Altura total del contenedor, ajusta si quieres */
+  border: 1px solid #ddd;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #fff; /* Opcional, para que se vea bien */
+}
+
+.lista-usuarios-list {
+  flex: 1 1 auto; /* Ocupa todo el espacio disponible */
+  overflow-y: auto; /* Scroll vertical solo aquí */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Espacio entre tarjetas */
+  margin-bottom: 1rem; /* Espacio debajo de la lista */
+}
+
+.lista-usuarios-pagination {
+  flex-shrink: 0; /* No se achica */
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
