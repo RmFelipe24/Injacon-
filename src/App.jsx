@@ -3,8 +3,8 @@ import ListaUsuarios from "./modules/ListaUsuarios";
 import BuscarComponentes from "./components/BuscarComponentes";
 import Login from "./components/Login";
 import CrearUsuario from "./components/CrearUsuario";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css"; // ✅ CSS de Bootstrap
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // ✅ JS de Bootstrap
 import "./style/App.css";
 
 function App() {
