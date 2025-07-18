@@ -11,23 +11,24 @@ const ListaUsuarios = ({ filtro, impresora }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    if (!impresora) return; // No cargar nada si no hay impresora seleccionada
+ useEffect(() => {
+  if (!impresora) return;
 
-    setLoading(true);
-    setError(null);
-    axios
-      .get("http://localhost:4000/items")
-      .then((response) => {
-        setUsers(response.data.items || []);
-        setLoading(false);
-        setPaginaActual(1);
-      })
-      .catch(() => {
-        setError("Error cargando datos");
-        setLoading(false);
-      });
-  }, [impresora]);
+  setLoading(true);
+  setError(null);
+
+  axios
+    .get("/package-lock.json")
+    .then((response) => {
+      setUsers(response.data.items || []);
+      setLoading(false);
+      setPaginaActual(1);
+    })
+    .catch(() => {
+      setError("Error cargando datos");
+      setLoading(false);
+    });
+}, [impresora]);
 
 const usuariosFiltrados = users.filter((user) => {
   const nombre = user.name?.toLowerCase() || "";
